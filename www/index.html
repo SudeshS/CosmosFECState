@@ -62,7 +62,7 @@
 		</div>
 	</div>
 
-	<div class= "container-fluid marsbackground" data-parallax="scroll" data-image-src="img/MarsDayBreak.jpg">
+	<div class= "container-fluid marsbackground" data-stellar-background-ratio="0.5"  >
 
 		<div class = "col-xs-12" id= "opening_text">
 			<div id= "text_container">GALACTIC FAMILY FUN</div>
@@ -72,7 +72,12 @@
 		<h1>WELCOME TO COSMOS</h1>
 	</div>
 	<div class="example"></div>
+
 <script type= "text/javascript">
+			$(function(){
+				$.stellar();
+			});
+
 			$('#menuIcon').click(function(e){
 					$('#myDIV').toggle();
 					e.stopPropagation();
@@ -91,7 +96,7 @@
 		}
 </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="dependencies/parallax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js" integrity="sha256-aQ6KGDKk7w8XQNZsQaQnbfeC//XPUIphSp/X/ZEwtV0=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
 	<!-- Latest compiled and minified JavaScript (j.query) -->
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->

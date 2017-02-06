@@ -102,7 +102,8 @@ a:active {
 
 .marsbackground {
 	min-height: 100vh;
-	background: transparent;
+	background-image: url("../img/MarsDayBreak.jpg");
+  background-size: cover;
 	width: 100%;
 }
 
