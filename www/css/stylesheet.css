@@ -170,7 +170,7 @@ div.example {
 
 @font-face {
 	font-family: Stellar-Light;
-	src: url(../fonts/Stellar-Light.otf);
+	src: url(../fonts/Stellar-light.otf);
 }
 
 @media screen and (max-width: 500px) {
