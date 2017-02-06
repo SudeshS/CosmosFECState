@@ -12,6 +12,8 @@
 		
 				<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 				
+				<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+				
 				<!-- Latest compiled and minified CSS -->
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -55,7 +57,8 @@
 				
 				body {
 				
-				margin: 0px;
+				margin: 0;
+				padding: 0;
 				
 				}
 				
@@ -67,7 +70,6 @@
 				position: fixed;
 				top: 0;
 				background-color: rgba(0, 0, 0, 0.0);
-				width: 100%;
 				border-radius: 0px;
 				padding: 0px;
 				z-index:3;
@@ -85,9 +87,28 @@
 				line-height: 70px;
 				text-align: center;
 				margin: 0px;
-				
+				display: block;
 			
 				}
+				
+				
+				
+				.Toggle {
+				
+				height: 70px;
+				line-height: 70px;
+				text-align: center;
+				margin: 0px;
+				display: none;
+				
+				
+				
+				}
+				
+				
+				
+				
+				
 				
 				div.hover_div {
 				
@@ -168,10 +189,11 @@
 				
 				a {
 				
-				font-family: 'Raleway', sans-serif;
+				font-family: 'Stellar-Light', sans-serif;
 				font-size: 15px;
-				font-weight: bold;
-				color: #ff6600;
+				letter-spacing: 1px;
+				
+				color: white;
 				text-decoration: none;
 				
 				}
@@ -195,7 +217,7 @@
 				a:hover {
 				
 				color: #ff6600;
-				text-decoration: 
+				text-decoration: none;
 				
 				
 				}
@@ -211,27 +233,22 @@
 				
 				.marsbackground {
 				
-				background-image: url("img/MarsDayBreak.jpg");
-				
-				height: 100vh; 
-				background-attachment: fixed;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-
+				min-height: 100vh;
+				background: transparent;
+				width: 100%;
 				
 				}
 				
 				#opening_text {
 				
 			
-				padding: 10px;
+				padding: 0;
 				position: absolute;
-				top: 40%;
+				top: 35%;
 				left: 0;
 				text-align: center;
 				height: auto;
-				
+				overflow: hidden;
 			
 			
 				
@@ -239,88 +256,81 @@
 				
 				#text_container {
 				
-				font: 'Raleway', sans-serif;
-				color: pink;
+				font-family: myFirstFont, sans-serif;
+				color: white;
 				font-style: normal;
-				font-weight: 1px;
-				font-size: 5.2vw;
-				background-color: rgba(0, 0, 0, .8);
+				letter-spacing: 15px;
+				font-size: 110px;
+				overflow: hidden;
+				background-color: rgba(0, 0, 0, 0);
 				width: auto;
-				padding: 10px;
+				padding-top: 0;
 				display: inline-block;
 				position: aboslute;
-				margin-bottom: 10px;
+				
 				
 				}
 				
-				.opening_button_container {
+			
 				
-				width: auto;
+			
+				
+				#About_Us {
+			
+				padding-top: 10px;
+				padding-bottom: 20px;
+				min-height: 10px;
+				display: block;
+				text-align: center;
+				overflow: hidden;
+			
+	
+				
+				}
+				
+				h1 {
+				
+				font-family: myFirstFont, sans-serif;
+				color: Black;
+				font-style: normal;
+				font-size: 60px;
+				
+				}
+				
+				h1::after {
+		
+				display: block;
+				content: '';
+				width: 20%;
+				height: 3px;
+				background: #ff6600;
 				position: absolute;
-				left: 50%;
-				top: 100%;
 				bottom: 0;
-				height: 40px;
-				margin-top: 10px;
+				left: 40%;
+				right:0;				
 				
 				}
 				
-			
-			
+				
 				
 				div.example {
 				
-				background-color: white;
-				height: 1000px;
+				height: 2000px;
 				width: 100%;
-				position: static;				
-				
-				}
-				
-				#mars_cover {
-				
-				height: 100vh; 
-				width: 100%;
-				background-color: rgba(0, 0, 0, 0.5);
-				z-index: 2;
-				left: 0px;
-				position: absolute;
-				
-				}
-				
-				#welcome {
-				
-				border: solid orange 1px;
-				height: 800px;
-				
-				}
-				
-				
-				#Welcome_Title {
-				
-				border: solid orange 1px;
-				height: 200px
-				
-				
-				}
-				
-				
-				.Tile {
-				
-				border: solid orange 1px;
-				text-align: center;
-				line-height: 600px;
-				height: 600px;
-				color: black;
-				font-size: 60px;
-				
+				clear: both;
 				
 				
 				
 				}
 				
 				
+				@font-face {
 				
+				font-family: myFirstFont;	
+				src: url(fonts/Stellar-Light.otf)
+				
+				}
+			
 			
 				
 				@media screen and (max-width: 500px) {
@@ -335,13 +345,19 @@
 					
 					#logocontainer {height: 70px;}
 					
+					#text_container {font-size: 7vw; }
+					
+					h1 {font-size: 6vw}
+					
 					div.linkdivs {
 					
 					line-height: 70px;
 					height: 70px;
+					display: none;
 					
 					}
-								
+					
+					.Toggle {display: block;}
 						
 				}
 				
@@ -359,27 +375,27 @@
 
 	
 
-	<div id= "navbar" class="container">
+	<div id= "navbar" class="container col-xs-12">
 		
 		<div class="row">
 			
 		
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
-			<div class= "hover_div"><a href=""> ATTRACTIONS</a></div>
+			<div class= "hover_div"><a href=""> Attractions</a></div>
 			</div>
 			<div class="col-md-2 hidden-xs hidden-sm linkdivs ">
-			<div class= "hover_div"><a href=""> SNACKBAR</a></div>
+			<div class= "hover_div"><a href=""> Snackbar</a></div>
 			</div>
 			<div class=" col-md-4 col-xs-6 " id="logocontainer">
 			<a href=""><img src="img/CosmosLogoVector.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a> 
 			</div>
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
-			<div class= "hover_div"><a href="">RESERVATIONS</a></div>
+			<div class= "hover_div"><a href="">Reservations</a></div>
 			</div>
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
-			<div class= "hover_div"><a href="">CONTACT US</a></div>
+			<div class= "hover_div"><a href="">Contact Us</a></div>
 			</div>
-			<div class= "col-xs-6 hidden-md hidden-lg hidden-xl linkdivs">
+			<div class= "col-xs-6  Toggle">
 			<button id= "menuIcon" onclick="myToggle()"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
 			</div>
 			
@@ -435,19 +451,19 @@
 	
 	
 	
-	<div class= "container-fluid marsbackground">  
+	<div class= "container-fluid marsbackground" data-parallax="scroll" data-image-src="img/MarsDayBreak.jpg">  
 	
 		<div class = "col-xs-12" id= "opening_text">
 		
 		
-			<div id= "text_container"> GALACTIC.FAMILY.FUN. </div>
+			<div id= "text_container">GALACTIC FAMILY FUN</div>
 	
 
 			
 		
 		</div>
 		
-		</div>
+		
 
 		
 			
@@ -458,42 +474,30 @@
 	
 
 	
-	
-	
-	<div id= "Welcome" class= "container col-xs-12">
+	<div id= "About_Us" class= "container col-xs-12">
 		
-		<div class= "row">
 		
-			<div id= "Welcome_Title" class= "col-xs-12">
-			
-			</div>
-	
-		</div>
-		
-		<div class= "row">
-		
-			<div class= "Tile col-md-4">
-			
-				Motor Neurons 
-			
-			</div>
-
-			<div  class= "Tile col-md-4">
-			
-				Are
-				
-			</div>
-			
-			
-			<div  class= "Tile col-md-4">
-			
-				Amazing
-			
-			</div>
-
-		</div>
+		<h1>WELCOME TO COSMOS</h1>
 	
 	</div>
+	
+	
+	
+	<div class="example"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -556,11 +560,17 @@ window.onscroll = function() {myFunction()};
 </script>
 		
 		
+	
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
+	<script src="dependencies/parallax.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
 		
 	<!-- Latest compiled and minified JavaScript (j.query) -->
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 	
 	<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
