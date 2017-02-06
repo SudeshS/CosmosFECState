@@ -85,14 +85,18 @@
 			$(document).click(function(e){
 			    $("#myDIV").hide();
 			});
-		window.onscroll = function() {myFunction()};
-			function myFunction() {
-					var g = document.getElementById("navbar");
-					var h = document.getElementById("logocontainer")
-				  if (document.body.scrollTop || document.documentElement.scrollTop > 50) {
-					g.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-					h.style.height = "70px";
-		   }
+
+		window.onscroll = function() {
+					var navbar = document.getElementById("navbar");
+					var logo = document.getElementById("logocontainer")
+				  if (document.documentElement.scrollTop > 50) {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+						logo.style.height = "70px";
+		   		}
+			 		else {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0)";
+						logo.style.height = "200px";
+					}
 		}
 </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

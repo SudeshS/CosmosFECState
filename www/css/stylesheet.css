@@ -10,6 +10,8 @@ body {
 	border-radius: 0px;
 	padding: 0px;
 	z-index: 3;
+  height: 70px;
+  overflow-y: visible;
 }
 
 div.linkdivs {
@@ -52,6 +54,7 @@ div.togglelinkdivs {
 	padding: 0px;
 	text-align: center;
 	margin: 0px;
+  transition: height 1s;
 }
 
 .centerlogo {
