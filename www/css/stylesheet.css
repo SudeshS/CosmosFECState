@@ -1,0 +1,203 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.0);
+	border-radius: 0px;
+	padding: 0px;
+	z-index: 3;
+  height: 70px;
+  overflow-y: visible;
+}
+
+div.linkdivs {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0px;
+	display: block;
+}
+
+.Toggle {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0px;
+	display: none;
+}
+
+div.hover_div {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	display: inline-block;
+}
+
+div.hover_div:hover {
+	border-bottom: solid #ff6600;
+}
+
+div.togglelinkdivs {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0px;
+}
+
+#logocontainer {
+	overflow: hidden;
+	height: 200px;
+	padding: 0px;
+	text-align: center;
+	margin: 0px;
+  transition: height 1s;
+}
+
+.centerlogo {
+	float: center;
+	height: 100%;
+}
+
+#myDIV {
+	width: 100%;
+	border-radius: 0px;
+	padding: 0px;
+	display: none;
+}
+
+#menuIcon {
+	background-color: rgba(0, 0, 0, 1.0);
+	color: white;
+	cursor: pointer;
+}
+
+a {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: white;
+	text-decoration: none;
+}
+
+a:link {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a:active {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+.marsbackground {
+	min-height: 100vh;
+	background-image: url("../img/MarsDayBreak.jpg");
+  background-size: cover;
+	width: 100%;
+}
+
+#opening_text {
+	padding: 0;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+}
+
+#text_container {
+	font-family: Stellar-light, sans-serif;
+	color: white;
+	font-style: normal;
+	letter-spacing: 15px;
+	font-size: 110px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+	width: auto;
+	padding-top: 0;
+	display: inline-block;
+	position: aboslute;
+}
+
+#About_Us {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	min-height: 10px;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: Stellar-light, sans-serif;
+	color: Black;
+	font-style: normal;
+	font-size: 60px;
+}
+
+h1::after {
+	display: block;
+	content: '';
+	width: 20%;
+	height: 3px;
+	background: #ff6600;
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	right: 0;
+}
+
+div.example {
+	height: 2000px;
+	width: 100%;
+	clear: both;
+}
+
+@font-face {
+	font-family: Stellar-light;
+	src: url(../fonts/Stellar-light.otf);
+}
+
+@media screen and (max-width: 500px) {
+	img {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#navbar {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	#logocontainer {
+		height: 70px;
+	}
+	#text_container {
+		font-size: 7vw;
+	}
+	h1 {
+		font-size: 6vw
+	}
+	div.linkdivs {
+		line-height: 70px;
+		height: 70px;
+		display: none;
+	}
+	.Toggle {
+		display: block;
+	}
+}
