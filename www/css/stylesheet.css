@@ -54,7 +54,7 @@ div.togglelinkdivs {
 	padding: 0px;
 	text-align: center;
 	margin: 0px;
-  transition: height 1s;
+  transition: height 0.5s;
 }
 
 .centerlogo {
