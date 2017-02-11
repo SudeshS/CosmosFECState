@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-	<body>
+	
 		
 		<head>
 
@@ -24,27 +23,7 @@
 				
 				<link rel="stylesheet" href="css/attractions.css" text="text/css">
 			
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				<style>
-				
-				
-			
-				
-				
-				</style>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 		</head>
 
@@ -55,74 +34,49 @@
 
 	
 	<div id= "navbar" class="container col-xs-12">
-		
 		<div class="row">
-			
-		
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
-			<div class= "hover_div"><a href=""> ATTRACTIONS</a></div>
+			<div class= "hover_div"><a href="attractions.html"> Attractions</a></div>
 			</div>
 			<div class="col-md-2 hidden-xs hidden-sm linkdivs ">
-			<div class= "hover_div"><a href=""> SNACKBAR</a></div>
+			<div class= "hover_div"><a href=""> Snackbar</a></div>
 			</div>
 			<div class=" col-md-4 col-xs-6 " id="logocontainer">
-			<a href=""><img src="img/CosmosLogoVector.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a> 
+			<a href=""><img src="img/CosmosLogoVector.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a>
 			</div>
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
-			<div class= "hover_div"><a href="">RESERVATIONS</a></div>
+			<div class= "hover_div"><a href="">Reservations</a></div>
 			</div>
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
-			<div class= "hover_div"><a href="">CONTACT US</a></div>
+			<div class= "hover_div"><a href="">Contact Us</a></div>
 			</div>
 			<div class= "col-xs-6  Toggle">
-			<button id= "menuIcon" onclick="myToggle()"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+			<div id= "menuIcon"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
 			</div>
-			
-			
-							
 		</div>
-		
+
 		<div id= "myDIV" class= "row hidden-lg hidden-md hidden-xl">
-	
 			<div  class= "row">
-		
 				<div class= "col-xs-12  togglelinkdivs">
 				<a href= "">ATTRACTIONS</a>
 				</div>
-			
 			</div>
-		
-		
 			<div  class= "row">
-		
 				<div class= "col-xs-12  togglelinkdivs">
 				<a href="">SNACKBAR</a>
 				</div>
-			
 			</div>
-			
-			
 			<div  class= "row">
-		
 				<div class= "col-xs-12  togglelinkdivs">
 				<a href="">RESERVATIONS</a>
 				</div>
-			
 			</div>
-			
 			<div  class= "row">
-		
 				<div class= "col-xs-12  togglelinkdivs">
 				<a href="">CONTACT US</a>
 				</div>
-			
 			</div>
-		
-		
-		
-		
 		</div>
-	
 	</div>
 	
 	
@@ -196,28 +150,30 @@
 	
 	
 	
+	<script type= "text/javascript">
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	$('#menuIcon').click(function(e){
+					$('#myDIV').toggle();
+					e.stopPropagation();
+			});
+			$(document).click(function(e){
+			    $("#myDIV").hide();
+			});
 
+	setInterval(function() {
+					var navbar = document.getElementById("navbar");
+					var logo = document.getElementById("logocontainer");
+				  if ($(window).scrollTop() > 50) {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+						logo.style.height = "70px";
+		   		}
+			 		else {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0)";
+						logo.style.height = "200px";
+					}
+		}, 250);
+	
+	</script>
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
