@@ -77,7 +77,7 @@ div.togglelinkdivs {
 }
 
 a {
-	font-family: 'myFirstFont', sans-serif;
+	font-family: 'Stellar-light', sans-serif;
 	font-size: 16px;
 	letter-spacing: 1px;
 	color: white;
@@ -106,8 +106,7 @@ a:active {
 
 #marsbackground {
 	min-height: 100vh;
-	background-image: url("../img/MarsDayBreak.jpg");
-	background-size: cover;
+	background: transparent;
 	width: 100%;
 	
 }
@@ -115,7 +114,7 @@ a:active {
 #opening_text {
 	padding: 0;
 	position: absolute;
-	top: 35%;
+	top: 37%;
 	left: 0;
 	text-align: center;
 	height: auto;
@@ -123,7 +122,7 @@ a:active {
 }
 
 #text_container {
-	font-family: 'myFirstFont', sans-serif;
+	font-family: 'Stellar-light', sans-serif;
 	color: white;
 	font-style: normal;
 	letter-spacing: 15px;
@@ -146,7 +145,7 @@ a:active {
 }
 
 h1 {
-	font-family: 'myFirstFont', sans-serif;
+	font-family: 'Stellar-light', sans-serif;
 	color: Black;
 	font-style: normal;
 	font-size: 60px;
@@ -205,13 +204,13 @@ div.example {
 }
 
 #At_Cosmos_Pic > h3 {
-	font-family: 'myFirstFont' , sans-serif;
+	font-family: 'Stellar-light' , sans-serif;
 	color: white;
 	font-size: 40px;
 	padding-bottom: 20px;
 }
 
-h3::after {
+#At_Cosmos_Pic > h3::after {
 	display: block;
 	content: '';
 	width: 15%;
@@ -266,7 +265,7 @@ h3::after {
 }
 
 h4 {
-	font-family: 'myFirstFont' , sans-serif;
+	font-family: 'Stellar-light' , sans-serif;
 	color: #ff6600;
 	font-size: 30px;
 	padding-top: 0px;
@@ -275,7 +274,7 @@ h4 {
 }
 
 .At_Paragraphs {
-	font-family: 'myFirstFont' , sans-serif;
+	font-family: 'Stellar-light' , sans-serif;
 	color: white;
 	font-size: 17px;
 	text-align: left;
@@ -314,7 +313,7 @@ h4 {
 
 .Tiles_Title {
 	width: 100%;
-	font-family: 'myFirstFont', sans-serif;
+	font-family: 'Stellar-light', sans-serif;
 	font-size: 40px;
 	color: white;
 	text-align: center;
@@ -339,7 +338,7 @@ h4 {
 }
 
 #Reserve_Now > h2 {
-	font-family: 'myFirstFont', sans-serif;
+	font-family: 'Stellar-light', sans-serif;
 	font-size: 60px;
 	color: white;
 }
@@ -347,14 +346,14 @@ h4 {
 #Reserve_Now > h4 {
 	padding-top: 30px;
 	padding-bottom: 25px;
-	font-family: 'myFirstFont', sans-serif;
+	font-family: 'Stellar-light', sans-serif;
 	font-size: 30px;
 	color: white;
 
 				}
 
 #Reserve_Now > a {
-	font-family: 'myFirstFont', sans-serif;
+	font-family: 'Stellar-light', sans-serif;
 	color: white;
 	font-size; 16px;
 	letter-spacing: 1px;
@@ -368,14 +367,75 @@ h4 {
 	position: relative;
 }
 
-				
-				
-				
-		
+.parallax-window {			
+	min-height: 100vh;
+	background: transparent;
+}
+								
+.parallax-window-2 {
+	min-height: 80vh;
+	background: transparent;
+}
 
+#attraction_text {
+	padding: 0;
+	line-height: 80vh;
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+	font-family: 'Stellar-light', sans-serif;
+	color: white;
+	font-style: normal;
+	letter-spacing: 15px;
+	font-size: 60px;
+}
+			
+.middle-2 {
+	min-height: 20vh;
+	text-align: center;
+	padding: 50px;
+}
+
+.Attractions_Marketing {
+	
+	height: 100%;
+	width: auto;
+	padding: 0px;
+		
+}
+
+.Attractions_Marketing > h1 {
+	font-family: 'Stellar-light', sans-serif;
+	color: Black;
+	font-style: normal;
+	font-size: 40px;
+	margin: 0;
+}
+
+.Attractions_Marketing > h1::after {
+	display: block;
+	content: '';
+	width: 10%;
+	height: 3px;
+	background: #ff6600;
+	position: relative;
+	margin-top: 15px;
+	bottom: 0;
+	left: 45%;
+	right: 0;
+}
+
+.Attractions_Marketing > h3 {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 25px;
+	color: black;
+	font-weight: 500;
+	padding: 10px;
+	
+}
 
 @font-face {
-	font-family: myFirstFont;
+	font-family: Stellar-light;
 	src: url(../fonts/Stellar-light.otf);
 }
 
