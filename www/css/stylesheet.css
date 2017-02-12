@@ -55,6 +55,7 @@ div.togglelinkdivs {
 	padding: 0px;
 	text-align: center;
 	margin: 0px;
+	border: solid orange 1px;
 	transition: height 1s;
 
 }
@@ -104,13 +105,6 @@ a:hover {
 a:active {
 	color: #ff6600;
 	text-decoration: none;
-}
-
-#marsbackground {
-	min-height: 100vh;
-	background: transparent;
-	width: 100%;
-	
 }
 
 #opening_text {
@@ -468,7 +462,7 @@ h4 {
 @media screen and (max-width: 992px) {
 	
 	#navbar {
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.7);
 	}
 	
 	#logocontainer {

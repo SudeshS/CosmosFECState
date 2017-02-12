@@ -46,7 +46,7 @@
 			<div class= "hover_div"><a href=""> Snackbar</a></div>
 			</div>
 			<div class=" col-md-4 col-xs-6 " id="logocontainer">
-			<a href="index.html"><img src="img/CosmosLogoVector.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a>
+			<a href="index.html"><img src="img/CosmosFecLogo.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a>
 			</div>
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
 			<div class= "hover_div"><a href="">Reservations</a></div>
@@ -204,7 +204,7 @@
 	
 	
 	<script type= "text/javascript">
-	
+
 	$('#menuIcon').click(function(e){
 					$('#myDIV').toggle();
 					e.stopPropagation();
@@ -213,18 +213,23 @@
 			    $("#myDIV").hide();
 			});
 
-	setInterval(function() {
+	
+	setInterval(function () {
+					var mq = window.matchMedia( "(min-width: 992px)" );
 					var navbar = document.getElementById("navbar");
 					var logo = document.getElementById("logocontainer");
-				  if ($(window).scrollTop() > 50) {
-						navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-						logo.style.height = "70px";
-		   		}
-			 		else {
+				  if (mq.matches && $(window).scrollTop() < 50) {
 						navbar.style.backgroundColor = "rgba(0, 0, 0, 0)";
 						logo.style.height = "200px";
+		   		}
+			 		else {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+						logo.style.height = "70px";
 					}
+				
+				
 		}, 250);
+
 	
 	</script>
 		
