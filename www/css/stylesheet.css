@@ -55,7 +55,6 @@ div.togglelinkdivs {
 	padding: 0px;
 	text-align: center;
 	margin: 0px;
-	border: solid orange 1px;
 	transition: height 1s;
 
 }
@@ -210,8 +209,29 @@ div.example {
 	background-color: #212121;
 }
 
-#At_Cosmos_Pic {
+.At_Cosmos_Text {
 	min-height: 500px;
+}
+
+#Pic_Container {
+	
+	height: 100%;
+	width: 100%;
+	position: relative;
+	left:0;
+	bottom: 0;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	clear: both;
+	text-align: center;
+	
+}
+
+.At_Cosmos_Logo {
+	float: center;
+	width: 300px;
+	max-width: 100%;
+
 }
 
 #At_Cosmos_Pic > h3 {
@@ -229,28 +249,6 @@ div.example {
 	background: #ff6600;
 	position: relative;
 	top: 30px;
-}
-
-#Pic_Container {
-	
-	width: 100%;
-	position: relative;
-	clear: both;
-	padding: 30px;
-	height: auto;
-	text-align: center;
-	padding-top: 90px;
-	
-}
-
-.At_Cosmos_Logo {
-	float: center;
-	width: 300px;
-	max-width: 100%;
-}
-
-.At_Cosmos_Text {
-	min-height: 500px;
 }
 
 .Tile_Top {
@@ -383,6 +381,7 @@ h4 {
 .parallax-window {			
 	min-height: 100vh;
 	background: transparent;
+	
 }
 								
 .parallax-window-2 {
