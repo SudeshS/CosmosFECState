@@ -20,6 +20,7 @@ div.linkdivs {
 	text-align: center;
 	margin: 0px;
 	display: block;
+	
 }
 
 .Toggle {
@@ -54,7 +55,8 @@ div.togglelinkdivs {
 	padding: 0px;
 	text-align: center;
 	margin: 0px;
-  transition: height 1s;
+	transition: height 1s;
+
 }
 
 .centerlogo {
@@ -135,6 +137,20 @@ a:active {
 	position: aboslute;
 }
 
+.arrow_container {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.Down_Arrow {
+	color: white;
+	padding: 0;
+	font-size: 2.5vw;
+	background-color: rgba(0, 0, 0, 0.0);
+	text-align: center;
+}
+
 #About_Us {
 	padding: 0;
 	padding-bottom: 15px;
@@ -195,6 +211,7 @@ div.example {
 }
 
 #At_Cosmos {
+	margin-top: 20px;
 	min-height: 500px;
 	background-color: #212121;
 }
@@ -221,13 +238,15 @@ div.example {
 }
 
 #Pic_Container {
+	
 	width: 100%;
 	position: relative;
 	clear: both;
 	padding: 30px;
 	height: auto;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 90px;
+	
 }
 
 .At_Cosmos_Logo {
@@ -531,11 +550,11 @@ h4 {
 	}
 	
 	#Reserve_Now {
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 	
 	#Reserve_Now > h2 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 	
 	#Reserve_Now > h4 {
