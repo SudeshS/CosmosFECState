@@ -35,7 +35,7 @@
 			<div class= "hover_div"><a href="snackbar.html"> Snackbar</a></div>
 			</div>
 			<div class=" col-md-4 col-xs-6 " id="logocontainer">
-			<a href=""><img src="img/CosmosLogoVector.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a>
+			<a href=""><img src="img/CosmosFecLogo.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a>
 			</div>
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
 			<div class= "hover_div"><a href="">Reservations</a></div>
@@ -72,7 +72,7 @@
 		</div>
 	</div>
 	
-	<div class="container-fluid " id="marsbackground" data-image-src= "img/MarsDayBreak.jpg" data-parallax="scroll" >
+	<div class="parallax-window" data-parallax="scroll" data-image-src= "img/MarsDayBreak.jpg" >
 
 	
 		<div class = "col-xs-12" id= "opening_text">
@@ -373,17 +373,21 @@
 			    $("#myDIV").hide();
 			});
 
-	setInterval(function() {
+	
+	setInterval(function () {
+					var mq = window.matchMedia( "(min-width: 992px)" );
 					var navbar = document.getElementById("navbar");
 					var logo = document.getElementById("logocontainer");
-				  if ($(window).scrollTop() > 50) {
-						navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-						logo.style.height = "70px";
-		   		}
-			 		else {
+				  if (mq.matches && $(window).scrollTop() < 50) {
 						navbar.style.backgroundColor = "rgba(0, 0, 0, 0)";
 						logo.style.height = "200px";
+		   		}
+			 		else {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+						logo.style.height = "70px";
 					}
+				
+				
 		}, 250);
 
 
