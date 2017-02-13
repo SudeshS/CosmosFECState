@@ -30,6 +30,30 @@
 
           $(this).css('background-color', 'red');
 
+         
+
+          function post () {
+              var clientSelectedDate;     
+
+              var clientSelectedDate = date.format().val();
+
+              $.post('reservations.php', {postdate:clientSelectedDate},
+                function(data)
+                  {
+                      $('#result').html(data);
+                  });
+          };
+
+          
+          
+
+          /*clientSelectedDate = date.format() ;
+
+          alert('You selected: ' + clientSelectedDate);
+          */
+
+        
+
         },
 
       });
@@ -45,6 +69,9 @@
   <div class="calendar-container">
     <div class="calendar" id='calendar'></div>
   </div>
+
+
+  <div id="results"></div>
 </body>
 
 </html>
