@@ -78,7 +78,7 @@ div.togglelinkdivs {
 	cursor: pointer;
 }
 
-a {
+a.one {
 	font-family: 'Stellar-light', sans-serif;
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -86,22 +86,22 @@ a {
 	text-decoration: none;
 }
 
-a:link {
+a.one:link {
 	color: #ff6600;
 	text-decoration: none;
 }
 
-a:visited {
+a.one:visited {
 	color: #ff6600;
 	text-decoration: none;
 }
 
-a:hover {
+a.one:hover {
 	color: #ff6600;
 	text-decoration: none;
 }
 
-a:active {
+a.one:active {
 	color: #ff6600;
 	text-decoration: none;
 }
@@ -297,7 +297,6 @@ h4 {
 
 #Tile_Container {
 	clear: both;
-	padding-top: 33%
 	border: solid white 1px;
 	background: #212121;
 	margin-top: 50px;
@@ -343,7 +342,7 @@ h4 {
 	clear: both;
 	background-color: #212121;
 	height: 460px;
-	border: solid white 1px;
+	border-top: solid white 1px;
 	text-align: center;
 	padding-top: 80px;
 }
@@ -389,6 +388,13 @@ h4 {
 	background: transparent;
 }
 
+.parallax-window-3 {
+	min-height:65vh;
+	background: transparent;
+	
+	
+}
+
 #attraction_text {
 	padding: 0;
 	line-height: 80vh;
@@ -409,11 +415,9 @@ h4 {
 }
 
 .Attractions_Marketing {
-	
 	height: 100%;
 	width: auto;
-	padding: 0px;
-		
+	padding: 0px;	
 }
 
 .Attractions_Marketing > h1 {
@@ -443,8 +447,107 @@ h4 {
 	color: black;
 	font-weight: 500;
 	padding: 10px;
-	
 }
+
+.footer {
+	min-height: 220px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	background: #212121;
+	margin-top: 1px;
+}
+
+.footer_links {
+	height: 220px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+a.two {
+	font-family: 'Stellar-light', sans-serif;
+	letter-spacing: 1px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.two:link {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.two:visited {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.two:hover {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.two:active {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.footer_media {
+	height: 220px;
+	text-align: center;
+}
+
+.media_icon_container {
+	height: 220px;
+	line-height: 220px;
+	text-align: center;
+}
+
+.footer_hours {
+	height: 220px;
+	text-align: center;
+	float: center;
+}
+
+.footer_hours > h6 {
+	padding-top: 5px;
+	margin-bottom: 0px;
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+
+.Hours_Table {
+	margin-left: auto;
+	margin-right: auto;
+	width:auto;
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	width: 70%;
+	position: relative;
+	top: 20px;
+	color: white;
+}
+
+table.Hours_Table td {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color:  white;
+	border-bottom-color: white;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding: 5px;
+	color: white;
+}
+
+
 
 @font-face {
 	font-family: Stellar-light;
@@ -496,6 +599,10 @@ h4 {
 	
 	.At_Cosmos_Logo {
 		width: 200px;
+	}
+	
+	.Hours_Table {
+		font-size: 13px;
 	}
 	
 }
